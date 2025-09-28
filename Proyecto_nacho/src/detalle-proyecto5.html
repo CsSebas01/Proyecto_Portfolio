@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Proyecto</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            min-height: 100vh;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f6f6f6;
+            color: #222;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .layout-flex {
+            display: flex;
+            flex: 1 0 auto;
+            min-height: 0;
+        }
+        .sidebar {
+            width: 220px;
+            background: linear-gradient(180deg, #4caaed 60%, #1e6fa7 100%);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .mini-logo {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(76,170,237,0.18);
+            background: #fff;
+            display: block;
+        }
+        .sidebar nav {
+            width: 100%;
+        }
+        .sidebar nav a {
+            display: block;
+            padding: 16px 32px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        .sidebar nav a.activo, .sidebar nav a:hover{
+            background: #fff;
+            color: #4caaed;
+        }
+        .contenido-proyecto {
+            flex: 1;
+            padding: 40px 60px;
+            background: #f4f4f4;
+        }
+        .hero-flex {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .hero-info h1 {
+            font-size: 2rem;
+            margin: 0 0 16px 0;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .hero-info h2 {
+            font-size: 3rem;
+            margin: 0 0 16px 0;
+            color:#4caaed;
+            font-weight: bold;
+        }
+        .section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            color:#4caaed;
+            font-weight: bold;
+        }
+        .imagenes-info {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 24px 0;
+            flex-wrap: wrap;
+        }
+        .img-info {
+            width: 200px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(76,170,237,0.18), 0 2px 8px rgba(0,0,0,0.08);
+            background: #fff;
+        }
+        .img-fija {
+            flex: 1;
+            max-width: 320px;
+            min-width: 180px;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(76,170,237,0.18), 0 2px 8px rgba(0,0,0,0.08);
+            background: #fff;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        @media (max-width: 900px) {
+            .contenido-proyecto {
+                padding: 20px 10px;
+            }
+            .sidebar {
+                width: 100px;
+                padding-top: 20px;
+            }
+            .sidebar nav a{
+                padding: 12px 10px;
+                font-size: 0.9rem;
+            }
+            .hero-flex {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            .img-fija {
+                width: 100%;
+                max-width: 100%;
+                height: 180px;
+                margin: 0 auto;
+            }
+            .imagenes-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .img-info {
+                width: 90vw;
+                max-width: 320px;
+                height: 120px;
+            }
+        }
+        .separador-celeste {
+            border: none;
+            border-top: 2.5px solid #4caaed;
+            margin: 32px 0;
+            width: 100%;
+        }
+        .contenido-footer {
+            background: #181818;
+            color:#fff;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 0.9rem;
+            width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-flex">
+        <!--Barra lateral de navegación-->
+        <aside class="sidebar">
+            <h2>Proyecto 5</h2>
+            <img src="assets/img/logo-nacho.jpeg" alt="Mini Logo" class="mini-logo">
+            <nav>
+                <section class="hero" id="home"></section>
+                <hr class="separador-blanco">
+                <a href="index.html#home" class="volver-btn"><i class="fas fa-arrow-left"></i> VOLVER AL INICIO</a>
+
+                <section class="" id="informacion"></section>
+                <hr class="separador-blanco">
+                <a href="#informacion"><i class="fas fa-info-circle"></i> INFORMACIÓN</a>
+
+                <section class="" id="funcionalidades"></section>
+                <hr class="separador-blanco">
+                <a href="#funcionalidades"><i class="fas fa-cogs"></i> FUNCIONALIDADES</a>
+
+                <section class="" id="contacto"></section>
+                <hr class="separador-blanco">
+                <a href="#contacto"><i class="fas fa-envelope"></i> CONTACTO</a>
+
+                <section id="final"></section>
+                <hr class="separador-blanco">
+
+            </nav>
+        </aside>
+        <!--Fin de barra lateral-->
+
+        <div class="contenido-proyecto">
+            <!-- Sección HOME -->
+            <section class="hero" id="home">
+                <div class="hero-flex">
+                    <div class="hero-info">
+                        <h1>Dio Glass</h1>
+                        <h2>Producción y transformación de vidrio para múltiples sectores</h2>
+                        <p>
+                            Dio Glass fabrica vidrio de alta calidad para aplicaciones industriales, arquitectónicas y decorativas, combinando procesos tecnológicos avanzados con un enfoque sostenible.
+                        </p>
+                    </div>
+                    <img src="assets/img/p51.png" alt="Imagen del Proyecto" class="img-fija">
+                </div>
+            </section>
+
+            <hr class="separador-celeste">
+
+            <!-- Sección INFORMACIÓN -->
+            <section class="section" id="informacion">
+                <h3>INFORMACION DEL PROYECTO</h3>
+                <p>
+                    La versatilidad del vidrio lo convierte en un material esencial en la construcción, la industria y el diseño. Dio Glass se dedica a su producción y transformación, ofreciendo soluciones adaptadas a las necesidades de cada cliente. Nuestra planta de fabricación cuenta con tecnología de última generación que permite elaborar vidrio resistente, funcional y estéticamente atractivo.
+
+                    Con un compromiso claro hacia la innovación y la sostenibilidad, desarrollamos productos que cumplen con los más altos estándares internacionales. Desde vidrios planos y templados hasta opciones decorativas y de alta resistencia, ofrecemos un catálogo que combina calidad, seguridad y diseño.                </p>
+                <div class="imagenes-info">
+                    <img src="assets/img/p52.png" alt="Imagen 1" class="img-info">
+                    <img src="assets/img/p53.png" alt="Imagen 2" class="img-info">
+                    <img src="assets/img/p54.png" alt="Imagen 3" class="img-info">
+                </div>
+            </section>
+
+            <hr class="separador-celeste">
+
+            <!-- Sección FUNCIONALIDADES -->
+            <section class="section" id="funcionalidades">
+                <h3>FUNCIONALIDADES</h3>
+                <ul>
+                    <li>Producción de vidrio plano, templado y laminado.</li>
+                    <li>Vidrio arquitectónico para fachadas y construcción.</li>
+                    <li>Vidrio decorativo para interiores y mobiliario.</li>
+                    <li>Investigación en materiales ecológicos y sostenibles.</li>
+
+                </ul>
+                <div class="videos-funcionalidades">
+                    <h4>Videos del proyecto</h4>
+                    <div class="videos-grid">
+                        <video controls width="250">
+                            <source src="assets/videos/demo1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="separador-celeste">
+
+            <!-- Sección CONTACTO -->
+            <section class="section" id="contacto">
+                <h3>CONTACTO</h3>
+                <p>Para más información, contactanos en:</p>
+                <div class="contacto-grid">
+                    <form class="contacto-form" autocomplete="off">
+                        <h4> Escribe tus datos de contacto</h4>
+                        <div class="form-row">
+                            <input type="text" placeholder="Nombre" required>
+                            <input type="email" placeholder="Gmail" required>
+                        </div>
+                        <input type="text" placeholder="Motivo" required>
+                        <textarea placeholder="tu mensaje" required></textarea>
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <span class="icon">&#x1F4CD;</span>
+                            <div>
+                                <strong>Nuestra Dirección</strong>
+                                <p>123 Madrid-Leganés</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <span class="icon">&#x1F4DE;</span>
+                            <div>
+                                <strong>Nuestros Teléfonos Oficiales</strong>
+                                <p>Oficina 1 Centro: +34 nose <br>Oficina 2 Leganés: +34 x</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <span class="icon">&#x2709;&#xFE0F;</span>
+                            <div>
+                                <strong>Nuestros Correos Oficiales</strong>
+                                <p>bot1@DOM.com<br>bot2@SQL.com</p>
+                            </div>
+                        </div>
+                        <!-- Botón de comprar proyecto debajo de Our Email -->
+                        <button onclick="abrirModal()"  style="background:#4caaed;color:#fff;border:none;padding:10px 24px;border-radius:4px;font-weight:700;cursor:pointer;margin-top:18px;width:100%;" class="btn-comprar-proyecto">COMPRAR PROYECTO</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal de compra -->
+    <div id="modal-compra" class="modal-compra">
+        <div class="modal-content">
+            <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+            <h3>Simulación de compra</h3>
+            <form>
+                <input type="text" placeholder="Tu nombre Completo" required>
+                <input type="email" placeholder="Número de Tarjeta" required>
+                <input type="text" placeholder="Fecha de Vencimiento" required>
+                <input type="text" placeholder="CVV" required>
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="contenido-footer">
+            <small>Copyright © 2025 - SMEC</small>
+        </div>
+    </footer>
+
+    <!--JS para modal y scrollspy-->
+    <script>
+        function abrirModal() {
+            document.getElementById('modal-compra').style.display = 'flex';
+            document.body.classList.add('modal-abierto');
+        }
+        function cerrarModal() {
+            document.getElementById('modal-compra').style.display = 'none';
+            document.body.classList.remove('modal-abierto');
+        }
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal-compra');
+            if (event.target === modal) {
+                cerrarModal();
+            }
+        }
+        // Scrollspy para navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section, .hero');
+            const navLinks = document.querySelectorAll('.sidebar nav a');
+
+            function onScroll() {
+                let scrollPos = window.scrollY || document.documentElement.scrollTop;
+                let offset = 120;
+                let found = false;
+                sections.forEach((section, i) => {
+                    const top = section.offsetTop - offset;
+                    const bottom = top + section.offsetHeight;
+                    if (!found && scrollPos >= top && scrollPos < bottom) {
+                        navLinks.forEach(link => link.classList.remove('activo'));
+                        if(navLinks[i]) navLinks[i].classList.add('activo');
+                        found = true;
+                    }
+                });
+                // Si no se encontró ninguna, desmarcar todo
+                if (!found) navLinks.forEach(link => link.classList.remove('activo'));
+            }
+
+            window.addEventListener('scroll', onScroll);
+            onScroll();
+        });
+    </script>
+</body>
+</html>

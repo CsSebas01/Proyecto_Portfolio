@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Codesphear Proyectos</h1>
+            <a href="javascript:void(0)" class="btn-header" onclick="abrirModalContacto()">Contáctanos</a>
+        </div>
+    </header>
+
+    <!--Todas las tarjetas de proyectos-->
+    <main>
+        <section class="seccion-proyectos">
+            <div class="proyectos-grid">
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto.html'">
+                    <img src="assets/img/logoP1.jpg" alt="Proyecto 1">
+                    <p>Proyecto 1</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto2.html'">
+                    <img src="assets/img/logoP2.jpg" alt="Proyecto 2">
+                    <p>Proyecto 2</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto3.html'">
+                    <img src="assets/img/logoP3.jpg" alt="Proyecto 3">
+                    <p>Proyecto 3</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto4.html'">
+                    <img src="assets/img/logoP4.jpeg" alt="Proyecto 4">
+                    <p>Proyecto 4</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto5.html'">
+                    <img src="assets/img/logoP5.jpeg" alt="Proyecto 5">
+                    <p>Proyecto 5</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto6.html'">
+                    <img src="assets/img/logoP6.jpeg" alt="Proyecto 6">
+                    <p>Proyecto 6</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto7.html'">
+                    <img src="assets/img/logoP7.jpg" alt="Proyecto 7">
+                    <p>Proyecto 7</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto8.html'">
+                    <img src="assets/img/logoP8.png" alt="Proyecto 8">
+                    <p>Proyecto 8</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto9.html'">
+                    <img src="assets/img/logoP9.png" alt="Proyecto 9">
+                    <p>INFORMACIÓN PÁGINA</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto10.html'">
+                    <img src="assets/img/logoP10.png" alt="Proyecto 10">
+                    <p>Proyecto 10</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto11.html'">
+                    <img src="assets/img/logoP11.jpg" alt="Proyecto 11">
+                    <p>Proyecto 11</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto12.html'">
+                    <img src="assets/img/logoP12.jpg" alt="Proyecto 12">
+                    <p>Proyecto 12</p>
+                </div>
+
+                <div class="proyectos-card" onclick="window.location.href='detalle-proyecto13.html'">
+                    <img src="assets/img/logoP13.jpg" alt="Proyecto 13">
+                    <p>Proyecto 13</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!--Fin de las tarjetas de proyectos-->
+    <!-- Modal de contacto -->
+
+    <div id="modal-contacto" class="modal-contacto">
+        <div class="modal-content-contacto">
+            <span class="cerrar-modal-contacto" onclick="cerrarModalContacto()">&times;</span>
+            <h3>Contacto</h3>
+            <p><strong>Teléfono:</strong> +51 999 999 999</p>
+            <p><strong>Email:</strong> contacto@codesphear.com</p>
+        </div>
+    </div>
+
+<!--contenido del footer-->
+    <footer>
+        <div class="contenido-footer">
+            <small>Copyright © 2025 - SMEC </small>
+        </div>
+    </footer>
+
+    <script>
+    function abrirModalContacto() {
+        document.getElementById('modal-contacto').style.display = 'flex';
+        document.body.classList.add('modal-abierto');
+    }
+    function cerrarModalContacto() {
+        document.getElementById('modal-contacto').style.display = 'none';
+        document.body.classList.remove('modal-abierto');
+    }
+    window.onclick = function(event) {
+        const modal = document.getElementById('modal-contacto');
+        if (event.target === modal) {
+            cerrarModalContacto();
+        }
+    }
+    </script>
+<!--Fin contenido del footer-->
+</body>
+</html>
