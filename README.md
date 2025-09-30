@@ -1,16 +1,16 @@
-# Proyecto Portfolio 🎨
+# Proyecto Portfolio 
 
 Este es un proyecto de **portafolio de un trabajo de colegio** desarrollado con el objetivo de mostrar mis habilidades, proyectos y experiencia en desarrollo web.  
 ---
 
-## 🚀 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - HTML5  
 - CSS3  
 - JavaScript  
 ---
 
-## 📂 Estructura del proyecto
+##  Estructura del proyecto
 
 Proyecto_Portfolio/
 │── index.html
@@ -26,7 +26,7 @@ Proyecto_Portfolio/
 
 ---
 
-## ✨ Funcionalidades principales
+##  Funcionalidades principales
 
 - Página de inicio con información personal.  
 - Sección de proyectos con ejemplos de mi trabajo.  
@@ -35,25 +35,12 @@ Proyecto_Portfolio/
 
 ---
 
-## 📸 Capturas de pantalla
-
-![Vista previa del portfolio](https://via.placeholder.com/800x400?text=Captura+de+tu+Portfolio)
-
----
-
-## 🛠️ Cómo usar este proyecto
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/CsSebas01/Proyecto_Portfolio.git
-Abrir el archivo index.html en tu navegador.
-
-📌 Próximas mejoras
+## Próximas mejoras
 Agregar más proyectos.
 
 Integrar un backend ligero para enviar mensajes desde el formulario.
 
 Optimizar para SEO.
 
-📞 Contacto
-Autor: Sebastián Mauricio Escobar Claros
+## Contacto
+Autor: SMEC
