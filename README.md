@@ -1,6 +1,6 @@
-# Proyecto Portfolio 
+# Proyecto Portfolio Informativo
 
-Este es un proyecto de **portafolio de un trabajo de colegio** desarrollado con el objetivo de mostrar mis habilidades, proyectos y experiencia en desarrollo web.  
+Este es un proyecto de **portafolio de un trabajo de colegio** desarrollado con el objetivo de mostrar proyectos de un grupo de estudiantes.  
 ---
 
 ##  Tecnologías utilizadas
